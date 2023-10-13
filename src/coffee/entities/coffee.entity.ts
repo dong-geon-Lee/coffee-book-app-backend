@@ -17,18 +17,18 @@ export class Coffee {
   @Column()
   image: string;
 
-  @Column()
+  @Column({ type: 'json' })
   sizes: string;
 
-  @Column()
+  @Column({ type: 'json' })
   price: number;
 
-  @Column()
+  @Column({ type: 'json' })
   stars: number;
 
   @Column()
   likes: boolean;
 
-  @Column()
+  @Column({ type: 'json' })
   product: { id: number; size: string; price: number; active: boolean }[];
 }
