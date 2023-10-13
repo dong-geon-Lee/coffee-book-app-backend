@@ -12,19 +12,19 @@ export class Coffee {
   description: string;
 
   @Column()
-  type: string[];
+  type: string;
 
   @Column()
   image: string;
 
   @Column()
-  sizes: string[];
+  sizes: string;
 
   @Column()
-  price: number[];
+  price: number;
 
   @Column()
-  stars: number[];
+  stars: number;
 
   @Column()
   likes: boolean;
